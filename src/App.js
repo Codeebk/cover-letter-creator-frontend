@@ -1,10 +1,20 @@
-import React from 'react';
+import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Navbarpage from './components/Navbar/Navbar';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+
 
 function App() {
   return (
+    
     <div className="App">
+      <Router>
+
+        <Navbarpage />
+
+      </Router>
+      
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -16,7 +26,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Cover Letter Creator
         </a>
       </header>
     </div>
